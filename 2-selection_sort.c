@@ -15,16 +15,16 @@ void selection_sort(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	for (; j < size; j++)
+	for (; j < (int)size; j++)
 	{
-		if (j < size)
+		if (j < (int)size)
 		{
 			if (array[j] < array[min])
 				min = j;
 		}
 
 
-		if (j == size - 1)
+		if (j == (int)size - 1)
 		{
 			tmp = array[i];
 			array[i] = array[min];
@@ -33,7 +33,7 @@ void selection_sort(int *array, size_t size)
 			i = i + 1;
 			j = i - 1;
 			min = i;
-			if (i == size - 2)
+			if (i == (int)size - 2)
 				break;
 		}
 
