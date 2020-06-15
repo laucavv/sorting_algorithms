@@ -19,19 +19,13 @@ void selection_sort(int *array, size_t size)
 	{
 		if (j < size)
 		{
-/*			printf("i= [%d], j=[%d]\n", i, j);*/
 			if (array[j] < array[min])
-			{
-/*				printf("array[%d] = %d array[%d] = %d", j, array[j], min, array[min]);*/
 				min = j;
-/*				printf("\nmin: %d \n", min);*/
-			}
 		}
 
 
 		if (j == size - 1)
 		{
-/*			printf("reset \n");*/
 			tmp = array[i];
 			array[i] = array[min];
 			array[min] = tmp;
