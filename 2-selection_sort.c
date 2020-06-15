@@ -26,10 +26,13 @@ void selection_sort(int *array, size_t size)
 
 		if (j == (int)size - 1)
 		{
-			tmp = array[i];
-			array[i] = array[min];
-			array[min] = tmp;
-			print_array(array, size);
+			if (i != min)
+			{
+				tmp = array[i];
+				array[i] = array[min];
+				array[min] = tmp;
+				print_array(array, size);
+			}
 			i = i + 1;
 			j = i - 1;
 			min = i;
