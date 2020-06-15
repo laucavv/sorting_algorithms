@@ -13,7 +13,7 @@ int lomotu_partition(int *array, int low, int high, size_t size)
 	int pi = low, pivot = array[high], i = low, tmp;
 
 
-	for (; i < high; i++)
+	for (; i <= high; i++)
 	{
 		if (array[i] < pivot)
 		{
