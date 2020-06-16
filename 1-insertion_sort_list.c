@@ -38,6 +38,9 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *act = NULL;
 
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+		return;
+
 	act = (*list)->next;
 	while (act != NULL)
 	{
