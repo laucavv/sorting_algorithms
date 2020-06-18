@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://i.stack.imgur.com/WcBRI.png" width="360"/>
+  <img src="https://i.stack.imgur.com/WcBRI.png" width="700"/>
 </p>
 <p>
  The simplest definition I can give for Big-O notation is this:
